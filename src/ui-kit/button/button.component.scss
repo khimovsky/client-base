@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.button {
+  height: 53px;
+  font-size: 18px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 16px 22px;
+  font-size: 1rem;
+  border-radius: 37px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+  &.btn-primary {
+    background-color: $primary-color;
+    color: #FFFFFF;
+
+    &:hover {
+      background-color: $secondary-color;
+    }
+
+    &:active {
+      background-color: $primary-color;
+    }
+
+    &:disabled {
+      background-color: #D8DEE9;
+      color: #FFFFFF;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: #FFFFFF;
+    color: $primary-color;
+
+    &:hover {
+      background-color: #3C7CF81A;
+    }
+
+    &:active {
+      background-color: #194EB633;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+:host {
+  width: 448px;
+  height: 593px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 44px;
+}
+
+.user-dialog-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.user-dialog-form-actions {
+  display: flex;
+  gap: 4px;
+  margin-top: 28px;
+  padding: 0;
+}

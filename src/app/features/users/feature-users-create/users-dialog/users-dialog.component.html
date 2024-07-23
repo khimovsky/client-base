@@ -1,0 +1,30 @@
+<span class="title-dialog">{{ isEdit ? 'Редактирование' : 'Новый клиент' }}</span>
+<div [formGroup]="userFormGroup" class="user-dialog-form-fields">
+  @for (field of formFields; track field.control) {
+    <app-custom-form-field
+      [control]="getControl(field.control)"
+      (blur)="onBlur($event)"
+      (focus)="onFocus($event)"
+      [placeholder]="field.placeholder"
+      [label]="field.label"
+      [errorMessage]="field.errorMessage"
+    ></app-custom-form-field>
+  }
+</div>
+<mat-dialog-actions class="user-dialog-form-actions" align="end">
+  <app-button
+    additionalClass="btn-secondary"
+    (clickEl)="cancel()"
+    tabindex="-1"
+  >
+    <span>Отмена</span>
+  </app-button>
+  <app-button
+    additionalClass="btn-primary"
+    [disabled]="userFormGroup.invalid"
+    (clickEl)="save()"
+    tabindex="-1"
+  >
+    <span>Сохранить</span>
+  </app-button>
+</mat-dialog-actions>

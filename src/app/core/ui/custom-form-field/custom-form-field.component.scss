@@ -1,0 +1,40 @@
+mat-error {
+  color: #DA1B1B;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: right;
+}
+
+.mat-mdc-form-field-input-control {
+  &.valid {
+    border-color: #505662 !important;
+  }
+
+  &.invalid {
+    border-color: #DA1B1B !important;
+  }
+}
+
+.custom-form-field {
+  position: relative;
+  width: 100%;
+  .floating-label {
+    position: absolute;
+    top: -7px;
+    left: 12px;
+    font-size: 12px;
+    color: #505662;
+    background: white;
+    padding: 0 4px;
+    display: none;
+
+    &.valid {
+      color: #505662;
+    }
+
+    &.invalid {
+      color: #DA1B1B;
+    }
+  }
+}

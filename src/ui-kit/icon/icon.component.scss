@@ -1,0 +1,28 @@
+.icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 7.5px;
+  border: none;
+  opacity: 40%;
+  outline: none;
+  border-radius: 100px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+    background-color: #E2EEFF;
+  }
+
+  &:active {
+    opacity: 1;
+    background-color: #B5D3FF;
+  }
+
+  &.disabled {
+    opacity: 40%;
+    cursor: not-allowed;
+  }
+}

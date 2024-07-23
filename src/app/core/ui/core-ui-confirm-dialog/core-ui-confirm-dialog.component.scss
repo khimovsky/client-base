@@ -1,0 +1,25 @@
+:host {
+  width: 448px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  padding-top: 44px;
+}
+
+.title-dialog {
+  margin-bottom: 28px;
+}
+
+.delete-dialog-description {
+  color: #263238;
+  font-size: 18px;
+  height: 95px;
+  padding: 0;
+}
+
+.delete-dialog-actions {
+  display: flex;
+  gap: 4px;
+  padding: 0;
+}

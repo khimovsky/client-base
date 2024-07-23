@@ -1,0 +1,12 @@
+<span class="title-dialog">Удаление строк</span>
+<mat-dialog-content class="delete-dialog-description">{{ dialogText }}</mat-dialog-content>
+<mat-dialog-actions class="delete-dialog-actions" align="end">
+  <app-button
+    additionalClass="btn-secondary"
+    (click)="cancel()"
+  >Отмена</app-button>
+  <app-button
+    additionalClass="btn-primary"
+    (click)="confirm()"
+  >Удалить</app-button>
+</mat-dialog-actions>

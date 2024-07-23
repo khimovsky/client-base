@@ -1,0 +1,25 @@
+:host {
+  display: block;
+  height: 100%;
+  padding: 0 16px;
+}
+
+.title-bar {
+  display: flex;
+  align-items: center;
+  max-width: 1888px;
+  padding: 0 12px;
+  height: 91px;
+}
+
+.title {
+  color: #2F7FD5;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.content {
+  border-radius: 20px;
+  padding: 0 21px;
+  background-color: #fff;
+}

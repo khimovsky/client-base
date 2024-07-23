@@ -1,0 +1,7 @@
+<div class="title-bar">
+  <span class="title">Клиенты</span>
+</div>
+<div class="content">
+  <app-users-toolbar />
+  <app-users-list [vm]="(viewModel$ | async) || defaultViewModel" />
+</div>
