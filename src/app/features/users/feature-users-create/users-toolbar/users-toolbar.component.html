@@ -2,11 +2,11 @@
   (iconClick)="openUserDialog()"
   [disabled]="false"
 >
-  <img src="assets/icons/add.svg">
+  <img src="assets/icons/add.svg" title="add">
 </app-icon>
 <app-icon
   (iconClick)="onUsersDelete()"
   [disabled]="!(hasUsersSelected$ | async)"
 >
-  <img src="assets/icons/delete.svg">
+  <img src="assets/icons/delete.svg" title="delete">
 </app-icon>
